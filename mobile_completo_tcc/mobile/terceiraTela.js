@@ -242,11 +242,12 @@ const DetalhesCampanha = ({ route }) => {
         return (
           <View key={index}>
             <Text style={styles.organizador}>{campanha.organizador.nome}</Text>
-            <Image style={styles.imagem} source={{ uri: uri }} />
+            
+            {/* <Image style={styles.imagem} source={require("../back/public/upload/users/camp/1685108185599_material.png")} /> */}
             <Text style={styles.descricao}>{campanha.descricao}</Text>
             <Text style={styles.valorMeta}>Valor meta: R$ {campanha.valor_meta}</Text>
             <Text style={styles.valorArrecadado}>Já arrecadou: R$ {campanha.valor_arrecadado}</Text>
-            {/* Adicione mais informações da campanha aqui */}
+      
           </View>
         );
       })}
@@ -270,8 +271,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   imagem: {
-    width: 200,
-    height: 200,
+    width: '200vh',
+    height: '200vh',
     marginBottom: 10,
   },
   descricao: {

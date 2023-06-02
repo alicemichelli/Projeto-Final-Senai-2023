@@ -19,7 +19,7 @@ model nivelAcesso { //OK
 model cadastro { //OK - LIBERADO PARA TODOS OS CAMPOS SEREM ALTERADOS
   id Int @id @default(autoincrement())
   nome String
-  descricao String
+  descricao String?
   cpf String? @unique
   cnpj String? @unique
   email String @unique

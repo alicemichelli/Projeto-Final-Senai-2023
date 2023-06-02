@@ -49,10 +49,35 @@ export default function App() {
         </Swiper>
       </View>
       <StatusBar style="auto" />
+
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="Campanhas" component={SegundaTela} />
-          <Stack.Screen name="DetalhesCampanha" component={DetalhesCampanha} />
+          <Stack.Screen
+            name="Campanhas"
+            component={SegundaTela}
+            options={{
+              headerTitleStyle: {
+                color: '#000000',
+                fontSize: 24,
+                fontWeight: 'bold',
+                
+              },
+              headerTitleAlign: 'center',
+            }}
+          />
+          <Stack.Screen
+           name="DetalhesCampanha" 
+           component={DetalhesCampanha}
+           options={{
+            headerTitleStyle: {
+              color: '#000000',
+              fontSize: 24,
+              fontWeight: 'bold',
+              
+            },
+            headerTitleAlign: 'center',
+          }}
+           />
         </Stack.Navigator>
       </NavigationContainer>
     </View>
@@ -64,6 +89,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
+ 
+
   searchBar: {
     flexDirection: 'row',
     alignItems: 'center',

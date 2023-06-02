@@ -147,7 +147,7 @@ const remove = async (req, res) => {
     }
   });
 
-  res.status(200).send("Cadastro excluído com sucesso!").end();
+  res.status(200).send(" ").end();
 }
 
 const login = async (req, res) => {
